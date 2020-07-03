@@ -1,2 +1,5 @@
 ITEM_DEF(int, APP_WIDTH, 1024)
 ITEM_DEF(int, APP_HEIGHT, 768)
+ITEM_DEF(string, FILE_NAME, "00_Introduction.md")
+ITEM_DEF(string, FONT_NAME, "fa-regular-400.ttf")
+ITEM_DEF(string, FONT_BOLD_NAME, "fa-solid-900.ttf")

@@ -24,6 +24,9 @@
     <Filter Include="Blocks\vnm\include">
       <UniqueIdentifier>{BBD1BC66-B1F5-44B1-9B40-E59E50995971}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Blocks\ui">
+      <UniqueIdentifier>{4b141455-a685-4865-be55-7afbeeecc364}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\ZenApp.cpp">
@@ -104,10 +107,19 @@
     <ClInclude Include="..\..\Cinder\blocks\Cinder-VNM\include\TuioHelper.h">
       <Filter>Blocks\vnm\include</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Cinder\blocks\Cinder-VNM\ui\ImGuiColorTextEdit\TextEditor.cpp">
+      <Filter>Blocks\ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Resources.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cinder\blocks\Cinder-VNM\ui\ImGuiColorTextEdit\TextEditor.h">
+      <Filter>Blocks\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cinder\blocks\Cinder-VNM\ui\imgui_markdown\imgui_markdown.h">
+      <Filter>Blocks\ui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
