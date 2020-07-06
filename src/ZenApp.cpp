@@ -158,6 +158,11 @@ struct ZenApp : public App
             if (event.getCode() == KeyEvent::KEY_ESCAPE) quit();
         });
 
+        getWindow()->getSignalResize().connect([&]{
+            APP_WIDTH = getWindowWidth();
+            APP_HEIGHT = getWindowHeight();
+        });
+
         getSignalUpdate().connect([&] {
             auto cpos = editor.GetCursorPosition();
             ImGui::Begin("Text Editor Demo", nullptr, ImGuiWindowFlags_HorizontalScrollbar | ImGuiWindowFlags_MenuBar);
@@ -217,6 +222,15 @@ struct ZenApp : public App
                         editor.SetPalette(TextEditor::GetLightPalette());
                     if (ImGui::MenuItem("Retro blue palette"))
                         editor.SetPalette(TextEditor::GetRetroBluePalette());
+                    ImGui::EndMenu();
+                }
+
+                if (ImGui::BeginMenu("Help"))
+                {
+                    if (ImGui::MenuItem("About"))
+                    {
+                    }
+
                     ImGui::EndMenu();
                 }
                 ImGui::EndMenuBar();
